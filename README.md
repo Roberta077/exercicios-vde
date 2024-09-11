@@ -16,5 +16,6 @@ Este repositório contém as soluções para os exercícios propostos, implement
 * **Editor de código:** Recomenda-se utilizar um editor como Visual Studio Code, PyCharm ou Sublime Text.
 
 ## Como executar
-1. **Clone o repositório:**
+1. **Clone do repositório:**
+   https://github.com/Roberta077/exercicios-vde.git
    
