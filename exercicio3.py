@@ -1,14 +1,18 @@
 import json
 
-faturamento_diario = json.loads('{"dias": [0, 1500, 2500, 1600, 0, 3500, 2000]}')
+with open('dados.json', 'r') as file:
+    faturamento_diario = json.load(file)
 
-valores = faturamento_diario["dias"]
-valores_validos = [v for v in valores if v > 0]
-media_mensal = sum(valores_validos) / len(valores_validos)
-menor_valor = min(valores_validos)
-maior_valor = max(valores_validos)
-dias_acima_media = sum(1 for v in valores_validos if v > media_mensal)
+valores = [item['valor'] for item in faturamento_diario if item['valor'] > 0]
 
-print(f"Menor valor: {menor_valor}")
-print(f"Maior valor: {maior_valor}")
+media_mensal = sum(valores) / len(valores)
+
+menor_valor = min(valores)
+maior_valor = max(valores)
+
+dias_acima_media = sum(1 for valor in valores if valor > media_mensal)
+
+# Resultados
+print(f"Menor valor de faturamento: {menor_valor:.2f}")
+print(f"Maior valor de faturamento: {maior_valor:.2f}")
 print(f"Número de dias acima da média: {dias_acima_media}")
