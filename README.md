@@ -7,7 +7,7 @@ Este repositório contém as soluções para os exercícios propostos, implement
 * **exercícios:**
     * **exercício1.py:** Calcula a soma dos números de 1 a 13.
     * **exercício2.py:** Implementa a sequência de Fibonacci.
-    * **exercício3.py:** Analisa dados de faturamento em um arquivo JSON.
+    * **exercício3.py:** Analisa dados de faturamento em um arquivo JSON, além de adicionar uma pasta chamada dados.JSON para fazer a assosiação entre os dois.
     * **exercício4.py:** Calcula o percentual de representação de cada estado no faturamento total.
     * **exercício5.py:** Inverte os caracteres de uma string.
 
